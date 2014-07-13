@@ -14,12 +14,17 @@
 		C986091319711E0600E087A5 /* Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986091219711E0600E087A5 /* Vocab.swift */; };
 		C986091519711E0D00E087A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986091419711E0D00E087A5 /* User.swift */; };
 		C986091719711E1600E087A5 /* WaniKaniAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986091619711E1600E087A5 /* WaniKaniAPISpec.swift */; };
-		C986091E19711E6F00E087A5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C986091C19711E6F00E087A5 /* Nimble.framework */; };
-		C986091F19711E6F00E087A5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C986091D19711E6F00E087A5 /* Quick.framework */; };
 		C986092219711FB600E087A5 /* Radical.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986092119711FB600E087A5 /* Radical.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C9824EA01972498300D69A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98608D619711A1900E087A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98608DE19711A1A00E087A5;
+			remoteInfo = WaniKaniKit;
+		};
 		C98608EC19711A1A00E087A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C98608D619711A1900E087A5 /* Project object */;
@@ -54,8 +59,6 @@
 		C986091219711E0600E087A5 /* Vocab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocab.swift; sourceTree = "<group>"; };
 		C986091419711E0D00E087A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C986091619711E1600E087A5 /* WaniKaniAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaniKaniAPISpec.swift; sourceTree = "<group>"; };
-		C986091C19711E6F00E087A5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../../../Library/Developer/Xcode/DerivedData/KanjiHelper-gqedyrtxxnzanbcrnxesozecwdxj/Build/Products/Debug/Nimble.framework"; sourceTree = "<group>"; };
-		C986091D19711E6F00E087A5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../../Library/Developer/Xcode/DerivedData/KanjiHelper-gqedyrtxxnzanbcrnxesozecwdxj/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
 		C986092119711FB600E087A5 /* Radical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radical.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,8 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C986091E19711E6F00E087A5 /* Nimble.framework in Frameworks */,
-				C986091F19711E6F00E087A5 /* Quick.framework in Frameworks */,
 				C98608EB19711A1A00E087A5 /* WaniKaniKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,8 +84,6 @@
 		C98608D519711A1900E087A5 = {
 			isa = PBXGroup;
 			children = (
-				C986091C19711E6F00E087A5 /* Nimble.framework */,
-				C986091D19711E6F00E087A5 /* Quick.framework */,
 				C98608E119711A1A00E087A5 /* WaniKaniKit */,
 				C98608EE19711A1A00E087A5 /* WaniKaniKitTests */,
 				C98608E019711A1A00E087A5 /* Products */,
@@ -217,6 +216,7 @@
 				C98608ED19711A1A00E087A5 /* PBXTargetDependency */,
 				C986091919711E6300E087A5 /* PBXTargetDependency */,
 				C986091B19711E6300E087A5 /* PBXTargetDependency */,
+				C9824EA11972498300D69A77 /* PBXTargetDependency */,
 			);
 			name = WaniKaniKitTests;
 			productName = WaniKaniKitTests;
@@ -300,6 +300,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C9824EA11972498300D69A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
+			targetProxy = C9824EA01972498300D69A77 /* PBXContainerItemProxy */;
+		};
 		C98608ED19711A1A00E087A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
@@ -488,6 +493,7 @@
 				C98608F719711A1A00E087A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C98608F819711A1A00E087A5 /* Build configuration list for PBXNativeTarget "WaniKaniKitTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +502,7 @@
 				C98608FA19711A1A00E087A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:WaniKaniKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Quick/Quick/Quick.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Quick/Nimble/Nimble.xcodeproj">
+   </FileRef>
+</Workspace>
