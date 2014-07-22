@@ -8,14 +8,14 @@
 
 import Foundation
 
-class Vocab {
-  var character: String?
-  var kana: String?
-  var meaning: String?
-  var level: Int?
-  var user_specific: String?
+public class Vocab {
+  public var character: String!
+  public var kana: String!
+  public var meaning: String!
+  public var level: Int!
+  public var user_specific: String!
   
-  init(_ values: NSDictionary) {
+  public init(_ values: NSDictionary) {
     self.character     = values["character"] as? String
     self.kana          = values["kana"] as? String
     self.meaning       = values["meaning"] as? String

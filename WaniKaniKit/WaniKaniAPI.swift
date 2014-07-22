@@ -8,20 +8,20 @@
 
 import Foundation
 
-class WaniKaniAPI {
+public class WaniKaniAPI {
   var baseUrl: String
   var session: NSURLSession
   var apiVersion: String
   var apiKey: String
   
-  init(_ url: String!, apiVersion: String!, apiKey: String! ) {
+  public init(_ url: String!, apiVersion: String!, apiKey: String! ) {
     self.baseUrl = url
     self.session = NSURLSession.sharedSession()
     self.apiVersion = apiVersion
     self.apiKey = apiKey
   }
   
-  func updateUserInfo(completion: (user: User) -> Void) {
+  public func updateUserInfo(completion: (user: User) -> Void) {
     // https://www.wanikani.com/api/user/56223fbda0bff89c3ba30e2983f4e21c/user-information
     var urlString = "\(baseUrl)/api/\(apiVersion)/user/\(apiKey)/user-information"
     JSONDataForEndpoint(urlString, completion: { json in
@@ -32,7 +32,7 @@ class WaniKaniAPI {
       })
   }
   
-  func retrieveVocabList(level: Int, completion: (vocab: [Vocab]) -> Void) {
+  public func retrieveVocabList(level: Int, completion: (vocab: [Vocab]) -> Void) {
     
     var urlString = "\(baseUrl)/api/\(apiVersion)/user/\(apiKey)/vocabulary/\(level)"
     JSONDataForEndpoint(urlString, completion: { json in
@@ -48,7 +48,7 @@ class WaniKaniAPI {
       })
   }
   
-  func retrieveRadicacalsList(level: Int, completion: (radicals: [Radical]) -> Void) {
+  public func retrieveRadicacalsList(level: Int, completion: (radicals: [Radical]) -> Void) {
     // https://www.wanikani.com/api/user/56223fbda0bff89c3ba30e2983f4e21c/radicals/1
     var urlString = "\(baseUrl)/api/\(apiVersion)/user/\(apiKey)/radicals/\(level)"
     

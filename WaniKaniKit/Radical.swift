@@ -8,13 +8,13 @@
 
 import Foundation
 
-class Radical {
-  var character: String?
-  var meaning: String?
-  var image: String?
-  var user_specific: NSDictionary?
+public class Radical {
+  public var character: String!
+  public var meaning: String!
+  public var image: String!
+  public var user_specific: NSDictionary!
   
-  init(_ radicalInfo: NSDictionary) {
+  public init(_ radicalInfo: NSDictionary) {
     self.character = radicalInfo["character"] as? String
     self.meaning   = radicalInfo["meaning"] as? String
     self.image     = radicalInfo["image"] as? String

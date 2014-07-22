@@ -29,20 +29,20 @@
 
 import Foundation
 
-class User {
-  var name: String?
-  var gravatar: String?
-  var level: Int?
-  var title: String?
-  var about: String?
-  var website: String?
-  var twitter: String?
-  var topics_count: Int?
-  var posts_count: Int?
-  var creation_date: String?
-  var vacation_date: String?
+public class User {
+  public var name: String!
+  public var gravatar: String!
+  public var level: Int!
+  public var title: String!
+  public var about: String!
+  public var website: String!
+  public var twitter: String!
+  public var topics_count: Int!
+  public var posts_count: Int!
+  public var creation_date: String!
+  public var vacation_date: String!
   
-  init(_ userInfo: NSDictionary) {
+  public init(_ userInfo: NSDictionary) {
     self.name = userInfo["username"] as? String
     self.gravatar = userInfo["gravatar"] as? String
     self.level = userInfo["level"] as? Int
