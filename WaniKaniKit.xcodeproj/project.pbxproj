@@ -18,7 +18,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C92F85AE1975FF2A0083F213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98608D619711A1900E087A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98608DE19711A1A00E087A5;
+			remoteInfo = WaniKaniKit;
+		};
+		C92F85B01975FF2A0083F213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98608D619711A1900E087A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98608DE19711A1A00E087A5;
+			remoteInfo = WaniKaniKit;
+		};
 		C9824EA01972498300D69A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98608D619711A1900E087A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98608DE19711A1A00E087A5;
+			remoteInfo = WaniKaniKit;
+		};
+		C9824EAC19724D8800D69A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98608D619711A1900E087A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98608DE19711A1A00E087A5;
+			remoteInfo = WaniKaniKit;
+		};
+		C9824EAE19724D8800D69A77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C98608D619711A1900E087A5 /* Project object */;
 			proxyType = 1;
@@ -217,6 +245,10 @@
 				C986091919711E6300E087A5 /* PBXTargetDependency */,
 				C986091B19711E6300E087A5 /* PBXTargetDependency */,
 				C9824EA11972498300D69A77 /* PBXTargetDependency */,
+				C9824EAD19724D8800D69A77 /* PBXTargetDependency */,
+				C9824EAF19724D8800D69A77 /* PBXTargetDependency */,
+				C92F85AF1975FF2A0083F213 /* PBXTargetDependency */,
+				C92F85B11975FF2A0083F213 /* PBXTargetDependency */,
 			);
 			name = WaniKaniKitTests;
 			productName = WaniKaniKitTests;
@@ -234,6 +266,7 @@
 				TargetAttributes = {
 					C98608DE19711A1A00E087A5 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 74D9UBS5CF;
 					};
 					C98608E919711A1A00E087A5 = {
 						CreatedOnToolsVersion = 6.0;
@@ -300,10 +333,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C92F85AF1975FF2A0083F213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
+			targetProxy = C92F85AE1975FF2A0083F213 /* PBXContainerItemProxy */;
+		};
+		C92F85B11975FF2A0083F213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
+			targetProxy = C92F85B01975FF2A0083F213 /* PBXContainerItemProxy */;
+		};
 		C9824EA11972498300D69A77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
 			targetProxy = C9824EA01972498300D69A77 /* PBXContainerItemProxy */;
+		};
+		C9824EAD19724D8800D69A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
+			targetProxy = C9824EAC19724D8800D69A77 /* PBXContainerItemProxy */;
+		};
+		C9824EAF19724D8800D69A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
+			targetProxy = C9824EAE19724D8800D69A77 /* PBXContainerItemProxy */;
 		};
 		C98608ED19711A1A00E087A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -343,6 +396,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -389,6 +443,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -411,7 +466,8 @@
 		C98608F619711A1A00E087A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -427,7 +483,8 @@
 		C98608F719711A1A00E087A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -443,7 +500,8 @@
 		C98608F919711A1A00E087A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -462,7 +520,8 @@
 		C98608FA19711A1A00E087A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
