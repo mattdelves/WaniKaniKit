@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C920D2BF197E5D0C000C020E /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920D2BE197E5D0C000C020E /* Kanji.swift */; };
 		C98608E519711A1A00E087A5 /* WaniKaniKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C98608E419711A1A00E087A5 /* WaniKaniKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C98608EB19711A1A00E087A5 /* WaniKaniKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98608DF19711A1A00E087A5 /* WaniKaniKit.framework */; };
 		C98608F219711A1A00E087A5 /* WaniKaniKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98608F119711A1A00E087A5 /* WaniKaniKitTests.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C920D2BE197E5D0C000C020E /* Kanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
 		C98608DF19711A1A00E087A5 /* WaniKaniKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaniKaniKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98608E319711A1A00E087A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98608E419711A1A00E087A5 /* WaniKaniKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaniKaniKit.h; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C920D2BD197E5CF7000C020E /* Kanji */ = {
+			isa = PBXGroup;
+			children = (
+				C920D2BE197E5D0C000C020E /* Kanji.swift */,
+			);
+			name = Kanji;
+			sourceTree = "<group>";
+		};
 		C98608D519711A1900E087A5 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		C98608E119711A1A00E087A5 /* WaniKaniKit */ = {
 			isa = PBXGroup;
 			children = (
+				C920D2BD197E5CF7000C020E /* Kanji */,
 				C986092019711FA200E087A5 /* Radicals */,
 				C986090F19711DF000E087A5 /* API */,
 				C986090E19711DE900E087A5 /* Vocab */,
@@ -314,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C920D2BF197E5D0C000C020E /* Kanji.swift in Sources */,
 				C986092219711FB600E087A5 /* Radical.swift in Sources */,
 				C986091119711DFB00E087A5 /* WaniKaniAPI.swift in Sources */,
 				C986091319711E0600E087A5 /* Vocab.swift in Sources */,
