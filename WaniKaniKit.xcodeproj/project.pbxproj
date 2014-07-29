@@ -33,6 +33,13 @@
 			remoteGlobalIDString = C98608DE19711A1A00E087A5;
 			remoteInfo = WaniKaniKit;
 		};
+		C95CD8DC19878484004F7B3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C98608D619711A1900E087A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C98608DE19711A1A00E087A5;
+			remoteInfo = WaniKaniKit;
+		};
 		C9824EA01972498300D69A77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C98608D619711A1900E087A5 /* Project object */;
@@ -260,6 +267,7 @@
 				C9824EAF19724D8800D69A77 /* PBXTargetDependency */,
 				C92F85AF1975FF2A0083F213 /* PBXTargetDependency */,
 				C92F85B11975FF2A0083F213 /* PBXTargetDependency */,
+				C95CD8DD19878484004F7B3A /* PBXTargetDependency */,
 			);
 			name = WaniKaniKitTests;
 			productName = WaniKaniKitTests;
@@ -354,6 +362,11 @@
 			isa = PBXTargetDependency;
 			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
 			targetProxy = C92F85B01975FF2A0083F213 /* PBXContainerItemProxy */;
+		};
+		C95CD8DD19878484004F7B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C98608DE19711A1A00E087A5 /* WaniKaniKit */;
+			targetProxy = C95CD8DC19878484004F7B3A /* PBXContainerItemProxy */;
 		};
 		C9824EA11972498300D69A77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
