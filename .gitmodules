@@ -2,5 +2,5 @@
 	path = Quick
 	url = git@github.com:Quick/Quick.git
 [submodule "Nimbile"]
-	path = Nimbile
+	path = Nimble
 	url = https://github.com/Quick/Nimble.git
