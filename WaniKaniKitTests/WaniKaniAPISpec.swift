@@ -25,10 +25,10 @@ class WaniKaniAPISpec: QuickSpec {
 
         api!.updateUserInfo({ user in
           called = true
-          expect(user.name).to.equal("mattdelves")
+          expect(user.name).to(equal("mattdelves"))
           })
         
-        expect{called}.willBefore(10).beTrue()
+        expect{called}.toEventually(beTruthy(), timeout: 10)
         })
       
       })
@@ -39,10 +39,10 @@ class WaniKaniAPISpec: QuickSpec {
         var called = false
         api!.retrieveVocabList(1, completion: { vocabList in
           called = true
-          expect(vocabList.count).to.equal(41)
+          expect(vocabList.count).to(equal(41))
           })
         
-        expect{called}.willBefore(10).beTrue()
+        expect(called).toEventually(beTruthy(), timeout: 10)
         
         })
       })
@@ -54,10 +54,10 @@ class WaniKaniAPISpec: QuickSpec {
         
         api!.retrieveRadicacalsList(1, completion: { radicalsList in
           called = true
-          expect{radicalsList.count}.to.equal(26)
+          expect(radicalsList.count).to(equal(26))
           })
         
-        expect{called}.willBefore(10).beTrue()
+        expect{called}.toEventually(beTruthy(), timeout: 10)
       })
     })
   }

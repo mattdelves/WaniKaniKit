@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C920D2BF197E5D0C000C020E /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920D2BE197E5D0C000C020E /* Kanji.swift */; };
+		C9589EE9199F36EA00F2B557 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9589EE7199F36EA00F2B557 /* Nimble.framework */; };
+		C9589EEA199F36EA00F2B557 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9589EE8199F36EA00F2B557 /* Quick.framework */; };
 		C98608E519711A1A00E087A5 /* WaniKaniKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C98608E419711A1A00E087A5 /* WaniKaniKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C98608EB19711A1A00E087A5 /* WaniKaniKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98608DF19711A1A00E087A5 /* WaniKaniKit.framework */; };
 		C98608F219711A1A00E087A5 /* WaniKaniKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98608F119711A1A00E087A5 /* WaniKaniKitTests.swift */; };
@@ -86,6 +88,8 @@
 
 /* Begin PBXFileReference section */
 		C920D2BE197E5D0C000C020E /* Kanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
+		C9589EE7199F36EA00F2B557 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		C9589EE8199F36EA00F2B557 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../Library/Developer/Xcode/DerivedData/WaniKaniKit-heaoawsodedoxmfjdaetomzindrv/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
 		C98608DF19711A1A00E087A5 /* WaniKaniKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaniKaniKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98608E319711A1A00E087A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98608E419711A1A00E087A5 /* WaniKaniKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaniKaniKit.h; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9589EE9199F36EA00F2B557 /* Nimble.framework in Frameworks */,
+				C9589EEA199F36EA00F2B557 /* Quick.framework in Frameworks */,
 				C98608EB19711A1A00E087A5 /* WaniKaniKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +135,8 @@
 		C98608D519711A1900E087A5 = {
 			isa = PBXGroup;
 			children = (
+				C9589EE7199F36EA00F2B557 /* Nimble.framework */,
+				C9589EE8199F36EA00F2B557 /* Quick.framework */,
 				C98608E119711A1A00E087A5 /* WaniKaniKit */,
 				C98608EE19711A1A00E087A5 /* WaniKaniKitTests */,
 				C98608E019711A1A00E087A5 /* Products */,
@@ -531,6 +539,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KanjiHelper-gqedyrtxxnzanbcrnxesozecwdxj/Build/Products/Debug",
+					"$(PROJECT_DIR)/Nimble/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/WaniKaniKit-heaoawsodedoxmfjdaetomzindrv/Build/Products/Debug",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -551,6 +561,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KanjiHelper-gqedyrtxxnzanbcrnxesozecwdxj/Build/Products/Debug",
+					"$(PROJECT_DIR)/Nimble/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/WaniKaniKit-heaoawsodedoxmfjdaetomzindrv/Build/Products/Debug",
 				);
 				INFOPLIST_FILE = WaniKaniKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
