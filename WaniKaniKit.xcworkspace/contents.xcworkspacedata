@@ -8,6 +8,6 @@
       location = "group:Quick/Quick/Quick.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Nimbile/Nimble.xcodeproj">
+      location = "group:Nimble/Nimble.xcodeproj">
    </FileRef>
 </Workspace>
