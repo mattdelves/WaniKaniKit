@@ -4,3 +4,6 @@
 [submodule "Nimbile"]
 	path = Nimble
 	url = https://github.com/Quick/Nimble.git
+[submodule "DummySpit"]
+	path = DummySpit
+	url = git@github.com:mattdelves/DummySpit.git
