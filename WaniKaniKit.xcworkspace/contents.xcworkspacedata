@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Nimble/Nimble.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:DummySpit/DummySpit.xcodeproj">
+   </FileRef>
 </Workspace>

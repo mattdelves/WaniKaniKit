@@ -14,16 +14,16 @@ public class WaniKaniAPI {
   var apiVersion: String
   var apiKey: String
   
-  public init(_ url: String!, apiVersion: String!, apiKey: String! ) {
+  public init(_ url: String!, apiVersion: String!, apiKey: String!, configuration: NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration() ) {
     self.baseUrl = url
-    self.session = NSURLSession.sharedSession()
+    self.session = NSURLSession(configuration: configuration)
     self.apiVersion = apiVersion
     self.apiKey = apiKey
   }
   
   public func updateUserInfo(completion: (user: User) -> Void) {
-    // https://www.wanikani.com/api/user/56223fbda0bff89c3ba30e2983f4e21c/user-information
     var urlString = "\(baseUrl)/api/\(apiVersion)/user/\(apiKey)/user-information"
+    println("updateUserInfo has been called")
     JSONDataForEndpoint(urlString) { json in
       let userInfo: AnyObject! = json["user_information"]
       let user = User(userInfo as NSDictionary)
@@ -49,7 +49,6 @@ public class WaniKaniAPI {
   }
   
   public func retrieveRadicacalsList(level: Int, completion: (radicals: [Radical]) -> Void) {
-    // https://www.wanikani.com/api/user/56223fbda0bff89c3ba30e2983f4e21c/radicals/1
     var urlString = "\(baseUrl)/api/\(apiVersion)/user/\(apiKey)/radicals/\(level)"
     
     JSONDataForEndpoint(urlString) {json in
@@ -65,7 +64,6 @@ public class WaniKaniAPI {
     }
   }
   
-  // https://www.wanikani.com/api/user/56223fbda0bff89c3ba30e2983f4e21c/kanji/1
   public func retrieveKanjiList(level: Int, completion: (kanji: [Kanji]) -> Void) {
     var urlString = "\(baseUrl)/api/\(apiVersion)/user/\(apiKey)/kanji/\(level)"
     
@@ -83,14 +81,15 @@ public class WaniKaniAPI {
   }
   
   func JSONDataForEndpoint(url: String, completion: (NSDictionary) -> Void) {
-    let task = session.dataTaskWithRequest(NSURLRequest(URL: NSURL(string: url))) { data, response, error in
+    println("Looking for data at url: \(url)")
+    let task = session.dataTaskWithURL(NSURL(string: url)) { data, response, error in
       var code = (response as NSHTTPURLResponse).statusCode
       if(code != 200) {
         println("I didn't get a valid response back. Instead I got \(code)")
         return
       }
-      
       var error: NSError?
+      println("Got data: \(data)")
       var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
 
       completion(json)

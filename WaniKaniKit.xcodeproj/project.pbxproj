@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C920D2BF197E5D0C000C020E /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920D2BE197E5D0C000C020E /* Kanji.swift */; };
+		C9450F2B19A0A8F300922482 /* radicals.json in Resources */ = {isa = PBXBuildFile; fileRef = C9450F2919A0A8F300922482 /* radicals.json */; };
+		C9450F2C19A0A8F300922482 /* vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = C9450F2A19A0A8F300922482 /* vocab.json */; };
 		C9589EE9199F36EA00F2B557 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9589EE7199F36EA00F2B557 /* Nimble.framework */; };
 		C9589EEA199F36EA00F2B557 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9589EE8199F36EA00F2B557 /* Quick.framework */; };
+		C9589EED199F3CEB00F2B557 /* DummySpit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9589EEC199F3CEB00F2B557 /* DummySpit.framework */; };
+		C9589EF219A0902800F2B557 /* kanji.json in Resources */ = {isa = PBXBuildFile; fileRef = C9589EF119A0902800F2B557 /* kanji.json */; };
+		C9589EF419A0920200F2B557 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = C9589EF319A0920200F2B557 /* user.json */; };
 		C98608E519711A1A00E087A5 /* WaniKaniKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C98608E419711A1A00E087A5 /* WaniKaniKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C98608EB19711A1A00E087A5 /* WaniKaniKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98608DF19711A1A00E087A5 /* WaniKaniKit.framework */; };
-		C98608F219711A1A00E087A5 /* WaniKaniKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98608F119711A1A00E087A5 /* WaniKaniKitTests.swift */; };
 		C986091119711DFB00E087A5 /* WaniKaniAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986091019711DFB00E087A5 /* WaniKaniAPI.swift */; };
 		C986091319711E0600E087A5 /* Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986091219711E0600E087A5 /* Vocab.swift */; };
 		C986091519711E0D00E087A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986091419711E0D00E087A5 /* User.swift */; };
@@ -88,14 +92,18 @@
 
 /* Begin PBXFileReference section */
 		C920D2BE197E5D0C000C020E /* Kanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
-		C9589EE7199F36EA00F2B557 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		C9589EE8199F36EA00F2B557 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../Library/Developer/Xcode/DerivedData/WaniKaniKit-heaoawsodedoxmfjdaetomzindrv/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
+		C9450F2919A0A8F300922482 /* radicals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = radicals.json; path = Fixtures/radicals.json; sourceTree = "<group>"; };
+		C9450F2A19A0A8F300922482 /* vocab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = vocab.json; path = Fixtures/vocab.json; sourceTree = "<group>"; };
+		C9589EE7199F36EA00F2B557 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		C9589EE8199F36EA00F2B557 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WaniKaniKit-heaoawsodedoxmfjdaetomzindrv/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
+		C9589EEC199F3CEB00F2B557 /* DummySpit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DummySpit.framework; path = "../DummySpit/build/Debug-iphoneos/DummySpit.framework"; sourceTree = "<group>"; };
+		C9589EF119A0902800F2B557 /* kanji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = kanji.json; path = Fixtures/kanji.json; sourceTree = "<group>"; };
+		C9589EF319A0920200F2B557 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = user.json; path = Fixtures/user.json; sourceTree = "<group>"; };
 		C98608DF19711A1A00E087A5 /* WaniKaniKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaniKaniKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98608E319711A1A00E087A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98608E419711A1A00E087A5 /* WaniKaniKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaniKaniKit.h; sourceTree = "<group>"; };
 		C98608EA19711A1A00E087A5 /* WaniKaniKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaniKaniKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98608F019711A1A00E087A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C98608F119711A1A00E087A5 /* WaniKaniKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaniKaniKitTests.swift; sourceTree = "<group>"; };
 		C986091019711DFB00E087A5 /* WaniKaniAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaniKaniAPI.swift; sourceTree = "<group>"; };
 		C986091219711E0600E087A5 /* Vocab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocab.swift; sourceTree = "<group>"; };
 		C986091419711E0D00E087A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -115,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9589EED199F3CEB00F2B557 /* DummySpit.framework in Frameworks */,
 				C9589EE9199F36EA00F2B557 /* Nimble.framework in Frameworks */,
 				C9589EEA199F36EA00F2B557 /* Quick.framework in Frameworks */,
 				C98608EB19711A1A00E087A5 /* WaniKaniKit.framework in Frameworks */,
@@ -132,11 +141,20 @@
 			name = Kanji;
 			sourceTree = "<group>";
 		};
+		C9589EF019A0901700F2B557 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				C9450F2919A0A8F300922482 /* radicals.json */,
+				C9450F2A19A0A8F300922482 /* vocab.json */,
+				C9589EF319A0920200F2B557 /* user.json */,
+				C9589EF119A0902800F2B557 /* kanji.json */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
 		C98608D519711A1900E087A5 = {
 			isa = PBXGroup;
 			children = (
-				C9589EE7199F36EA00F2B557 /* Nimble.framework */,
-				C9589EE8199F36EA00F2B557 /* Quick.framework */,
 				C98608E119711A1A00E087A5 /* WaniKaniKit */,
 				C98608EE19711A1A00E087A5 /* WaniKaniKitTests */,
 				C98608E019711A1A00E087A5 /* Products */,
@@ -177,8 +195,8 @@
 		C98608EE19711A1A00E087A5 /* WaniKaniKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C9589EF019A0901700F2B557 /* Fixtures */,
 				C986091619711E1600E087A5 /* WaniKaniAPISpec.swift */,
-				C98608F119711A1A00E087A5 /* WaniKaniKitTests.swift */,
 				C98608EF19711A1A00E087A5 /* Supporting Files */,
 			);
 			path = WaniKaniKitTests;
@@ -187,6 +205,9 @@
 		C98608EF19711A1A00E087A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9589EEC199F3CEB00F2B557 /* DummySpit.framework */,
+				C9589EE7199F36EA00F2B557 /* Nimble.framework */,
+				C9589EE8199F36EA00F2B557 /* Quick.framework */,
 				C98608F019711A1A00E087A5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -331,6 +352,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9450F2B19A0A8F300922482 /* radicals.json in Resources */,
+				C9450F2C19A0A8F300922482 /* vocab.json in Resources */,
+				C9589EF419A0920200F2B557 /* user.json in Resources */,
+				C9589EF219A0902800F2B557 /* kanji.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +378,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C98608F219711A1A00E087A5 /* WaniKaniKitTests.swift in Sources */,
 				C986091719711E1600E087A5 /* WaniKaniAPISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +565,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KanjiHelper-gqedyrtxxnzanbcrnxesozecwdxj/Build/Products/Debug",
 					"$(PROJECT_DIR)/Nimble/build/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/WaniKaniKit-heaoawsodedoxmfjdaetomzindrv/Build/Products/Debug",
+					"$(PROJECT_DIR)/DummySpit/build/Debug-iphoneos",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -563,6 +588,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KanjiHelper-gqedyrtxxnzanbcrnxesozecwdxj/Build/Products/Debug",
 					"$(PROJECT_DIR)/Nimble/build/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/WaniKaniKit-heaoawsodedoxmfjdaetomzindrv/Build/Products/Debug",
+					"$(PROJECT_DIR)/DummySpit/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = WaniKaniKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
