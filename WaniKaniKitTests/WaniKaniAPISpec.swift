@@ -26,7 +26,7 @@ class WaniKaniAPISpec: QuickSpec {
       
       beforeEach({
         let filePath = NSBundle(forClass: WaniKaniAPISpec.self).pathForResource("user", ofType: "json")
-        let response = DummySpitServiceResponse(filePath: filePath, header: ["Content-type": "application/json"], urlComponentToMatch: "user-information")
+        let response = DummySpitServiceResponse(filePath: filePath!, header: ["Content-type": "application/json"], urlComponentToMatch: "user-information")
         DummySpitURLProtocol.cannedResponse(response)
       })
       
@@ -50,7 +50,7 @@ class WaniKaniAPISpec: QuickSpec {
     describe("vocab retrieval", {
       beforeEach({
         let filePath = NSBundle(forClass: WaniKaniAPISpec.self).pathForResource("vocab", ofType: "json")
-        let response = DummySpitServiceResponse(filePath: filePath, header: ["Content-type": "application/json"], urlComponentToMatch: "vocabulary")
+        let response = DummySpitServiceResponse(filePath: filePath!, header: ["Content-type": "application/json"], urlComponentToMatch: "vocabulary")
         DummySpitURLProtocol.cannedResponse(response)
       })
       
@@ -66,7 +66,7 @@ class WaniKaniAPISpec: QuickSpec {
           expect(vocabList.count).to(equal(41))
           })
         
-        expect(called).toEventually(beTruthy())
+        expect(called).toEventually(beTruthy(), timeout: 10)
         
         })
       })
@@ -74,7 +74,7 @@ class WaniKaniAPISpec: QuickSpec {
     describe("radicals retrieval", {
       beforeEach({
         let filePath = NSBundle(forClass: WaniKaniAPISpec.self).pathForResource("radicals", ofType: "json")
-        let response = DummySpitServiceResponse(filePath: filePath, header: ["Content-type": "application/json"], urlComponentToMatch: "radicals")
+        let response = DummySpitServiceResponse(filePath: filePath!, header: ["Content-type": "application/json"], urlComponentToMatch: "radicals")
         DummySpitURLProtocol.cannedResponse(response)
       })
       
@@ -91,14 +91,14 @@ class WaniKaniAPISpec: QuickSpec {
           expect(radicalsList.count).to(equal(26))
           })
         
-        expect{called}.toEventually(beTruthy())
+        expect{called}.toEventually(beTruthy(), timeout: 10)
       })
     })
 
     describe("kanji retrieval", {
       beforeEach({
         let filePath = NSBundle(forClass: WaniKaniAPISpec.self).pathForResource("kanji", ofType: "json")
-        let response = DummySpitServiceResponse(filePath: filePath, header: ["Content-type": "application/json"])
+        let response = DummySpitServiceResponse(filePath: filePath!, header: ["Content-type": "application/json"])
         DummySpitURLProtocol.cannedResponse(response)
       })
       
@@ -114,7 +114,7 @@ class WaniKaniAPISpec: QuickSpec {
           expect(kanjiList.count).to(equal(18))
         })
         
-        expect{called}.toEventually(beTruthy())
+        expect{called}.toEventually(beTruthy(), timeout: 10)
       })
     })
   }

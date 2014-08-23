@@ -81,7 +81,6 @@ public class WaniKaniAPI {
   }
   
   func JSONDataForEndpoint(url: String, completion: (NSDictionary) -> Void) {
-    println("Looking for data at url: \(url)")
     let task = session.dataTaskWithURL(NSURL(string: url)) { data, response, error in
       var code = (response as NSHTTPURLResponse).statusCode
       if(code != 200) {
@@ -89,7 +88,6 @@ public class WaniKaniAPI {
         return
       }
       var error: NSError?
-      println("Got data: \(data)")
       var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
 
       completion(json)
