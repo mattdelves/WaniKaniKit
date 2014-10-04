@@ -31,5 +31,5 @@ git checkout -qf "$BUILDBOX_COMMIT"
 git submodule init
 git submodule update
 
-xcodebuild -workspace WaniKaniKit.xcworkspace -scheme WaniKaniKit -sdk iphonesimulator8.0 -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch),OS=8.0' clean build test | xcpretty
+xcodebuild -workspace WaniKaniKit.xcworkspace -scheme WaniKaniKit -sdk iphonesimulator8.1 -destination 'platform=iOS Simulator,name=iPhone 6,OS=8.1' clean build test | xcpretty
 
