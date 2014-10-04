@@ -81,7 +81,7 @@ public class WaniKaniAPI {
   }
   
   func JSONDataForEndpoint(url: String, completion: (NSDictionary) -> Void) {
-    let task = session.dataTaskWithURL(NSURL(string: url)) { data, response, error in
+    let task = session.dataTaskWithURL(NSURL(string: url)!) { data, response, error in
       var code = (response as NSHTTPURLResponse).statusCode
       if(code != 200) {
         println("I didn't get a valid response back. Instead I got \(code)")
