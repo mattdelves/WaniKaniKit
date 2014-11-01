@@ -18,6 +18,10 @@
 		8DE9E0D51A04E83600ED97C2 /* DummySpit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE9E0D21A04E83600ED97C2 /* DummySpit.framework */; };
 		8DE9E0D61A04E83600ED97C2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE9E0D31A04E83600ED97C2 /* Nimble.framework */; };
 		8DE9E0D71A04E83600ED97C2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE9E0D41A04E83600ED97C2 /* Quick.framework */; };
+		8DE9E0DC1A04E8C500ED97C2 /* kanji.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9E0D81A04E8C500ED97C2 /* kanji.json */; };
+		8DE9E0DD1A04E8C500ED97C2 /* radicals.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9E0D91A04E8C500ED97C2 /* radicals.json */; };
+		8DE9E0DE1A04E8C500ED97C2 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9E0DA1A04E8C500ED97C2 /* user.json */; };
+		8DE9E0DF1A04E8C500ED97C2 /* vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9E0DB1A04E8C500ED97C2 /* vocab.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		8DE9E0D21A04E83600ED97C2 /* DummySpit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DummySpit.framework; path = "../DummySpit/build/Debug-iphoneos/DummySpit.framework"; sourceTree = "<group>"; };
 		8DE9E0D31A04E83600ED97C2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		8DE9E0D41A04E83600ED97C2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WaniKaniKit-ggccskjzofgrtrehysfrculbynsb/Build/Products/Debug/Quick.framework"; sourceTree = "<group>"; };
+		8DE9E0D81A04E8C500ED97C2 /* kanji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = kanji.json; path = Fixtures/kanji.json; sourceTree = "<group>"; };
+		8DE9E0D91A04E8C500ED97C2 /* radicals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = radicals.json; path = Fixtures/radicals.json; sourceTree = "<group>"; };
+		8DE9E0DA1A04E8C500ED97C2 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = user.json; path = Fixtures/user.json; sourceTree = "<group>"; };
+		8DE9E0DB1A04E8C500ED97C2 /* vocab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = vocab.json; path = Fixtures/vocab.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,10 @@
 		8DE9E0B91A04E74B00ED97C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DE9E0D81A04E8C500ED97C2 /* kanji.json */,
+				8DE9E0D91A04E8C500ED97C2 /* radicals.json */,
+				8DE9E0DA1A04E8C500ED97C2 /* user.json */,
+				8DE9E0DB1A04E8C500ED97C2 /* vocab.json */,
 				8DE9E0BA1A04E74B00ED97C2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -227,6 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE9E0DE1A04E8C500ED97C2 /* user.json in Resources */,
+				8DE9E0DF1A04E8C500ED97C2 /* vocab.json in Resources */,
+				8DE9E0DD1A04E8C500ED97C2 /* radicals.json in Resources */,
+				8DE9E0DC1A04E8C500ED97C2 /* kanji.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
